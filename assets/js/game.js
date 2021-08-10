@@ -36,12 +36,12 @@ var fight = function(enemyName) {
         //remove enemy's health by subtacting the amount set in teh playerAttack variable
         enemyHealth = enemyHealth - playerAttack;
         console.log(
-            playerName + " attacked " + enemyNames + ". " + enemyNames + " now has " + enemyHealth + " health remaining."
+            playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
         );
 
         // check enemy's health
         if (enemyHealth <= 0) {
-            window.alert(enemyNames + " has died!");
+            window.alert(enemyName + " has died!");
         
 
             // award player money for winning
@@ -50,14 +50,14 @@ var fight = function(enemyName) {
             // leave while() loop since enemy is dead
             break;
         }    else {
-            window.alert(enemyNames + " still has " + enemyHealth + " health left.");
+            window.alert(enemyName + " still has " + enemyHealth + " health left.");
         }
 
 
         // remove player's health by subtracting the amount set in the enemyAttack variable
         playerHealth = playerHealth - enemyAttack;
         console.log(
-            enemyNames + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
+            enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
         );
 
         // check player's health

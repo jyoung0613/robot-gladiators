@@ -193,6 +193,7 @@ var randomNumber = function(min, max) {
       window.alert("Thank you for playing Robot Gladiators! Come back soon!");
     }
   };
+
   
   // go to shop between battles function
   var shop = function() {

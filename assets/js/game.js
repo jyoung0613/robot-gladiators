@@ -204,24 +204,25 @@ var randomNumber = function(min, max) {
     // convert answer from prompt to an actual number
     shopOptionPrompt = parseInt(shopOptionPrompt);
   
-    // use switch case to carry out action
-    switch (shopOptionPrompt) {
-      case 1:
-        playerInfo.refillHealth();
-        break;
-      case 2:
-        playerInfo.upgradeAttack();
-        break;
-      case 3:
-        window.alert("Leaving the store.");
-        break;
-      default:
-        window.alert("You did not pick a valid option. Try again.");
-        shop();
-        break;
-    }
-  };
-  
+        // use switch case to carry out action
+        switch (shopOptionPrompt) {
+            case 1:
+              playerInfo.refillHealth();
+              break;
+            case 2:
+              playerInfo.upgradeAttack();
+              break;
+            case 3:
+              window.alert("Leaving the store.");
+              break;
+            default:
+              window.alert("You did not pick a valid option. Try again.");
+              shop();
+              break;
+          }
+        };
+
+    
   // function to set name
   var getPlayerName = function() {
     var name = "";
